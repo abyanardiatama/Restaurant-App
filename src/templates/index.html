@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <title>Restaurant Apps Starter Project</title>
+</head>
+<body>
+  <!-- Skip to Content Link -->
+  <a href="#restaurant" class="skip-to-content">Skip to Content</a>
+  <!-- New App-Bar -->
+  <header>
+    <nav>
+      <!-- hamburger button -->
+      <!-- <input type="checkbox" id="check"> -->
+      <a href="#" for="check" class="menu-icon"><i class="bi bi-list"></i></a>
+      
+      <ul class="navbar">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Favorite</a></li>
+        <li><a href="http://github.com/abyanardiatama" target="_blank">About Us</a></li>
+      </ul>
+      <label class="logo">Dicoding's Restaurant</label>
+    </nav>
+  </header>
+  <script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const navbar = document.querySelector('ul');
+    menuIcon.addEventListener('click', () => {
+      // change navbar style left to 0 and -100%
+      navbar.classList.toggle('show-menu');
+    });
+  </script>
+  
+  
+  <!-- Main Content -->
+  <main id="maincontent">
+    <!-- Jumbotron -->
+    <div class="wrapper-jumbotron">
+      <div class="box1">
+          <!-- include image from unsplash -->
+          <img src="./images/heros/jumbo.png" alt="food" class="img-fluid">
+      </div>
+    </div>
+    <!-- End of Jumbotron -->
+
+    <!-- Content -->
+    <div class="content">
+      <h2>Selamat Datang di Dicoding's Restaurant</h2>
+      <p>Temukan restoran terbaik di kota Anda</p>
+    </div>
+
+    <!-- List of Restaurants -->
+    <div id="restaurant" class="wrapper">
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <p>Copyright © 2020 - Dicoding's Restaurant</p> 
+    </div>
+  </footer>
+  <script>
+    
+
+  </script>
+</body>
+</html>
