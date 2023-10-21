@@ -6,7 +6,9 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "karma start"
+    "test": "karma start",
+    "serve": "http-server dist --port 9000",
+    "build-serve": "npm run build && npm run serve"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
@@ -16,10 +18,14 @@
     "@babel/preset-env": "^7.18.2",
     "babel-loader": "^8.2.5",
     "bootstrap-icons": "^1.11.1",
+    "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
-    "eslint": "^8.17.0",
-    "html-webpack-plugin": "^5.5.0",
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "html-webpack-plugin": "^5.5.3",
+    "http-server": "^14.1.1",
     "jasmine-ajax": "^4.0.0",
     "jasmine-core": "^4.2.0",
     "karma": "^6.4.2",
@@ -37,6 +43,11 @@
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.0.8",
-    "regenerator-runtime": "^0.13.9"
+    "idb": "^7.1.1",
+    "regenerator-runtime": "^0.13.9",
+    "workbox-precaching": "^7.0.0",
+    "workbox-routing": "^7.0.0",
+    "workbox-strategies": "^7.0.0",
+    "workbox-window": "^7.0.0"
   }
 }
