@@ -1,69 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE html dark>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <title>Restaurant Apps Starter Project</title>
+  <meta name="description" content="Temukan restauran favoritmu!">
+  <link rel="manifest" href="./app.webmanifest">
+  <meta name="theme-color" content="#fc5603"/>
+  <link rel="apple-touch-icon" href="./favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+
+  <title>Dicoding's Restaurant</title>
 </head>
 <body>
-  <!-- Skip to Content Link -->
-  <a href="#restaurant" class="skip-to-content">Skip to Content</a>
-  <!-- New App-Bar -->
-  <header>
-    <nav>
-      <!-- hamburger button -->
-      <!-- <input type="checkbox" id="check"> -->
-      <a href="#" for="check" class="menu-icon"><i class="bi bi-list"></i></a>
-      
-      <ul class="navbar">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Favorite</a></li>
-        <li><a href="http://github.com/abyanardiatama" target="_blank">About Us</a></li>
+  <a href="#mainContent" tabindex="0" id="skip-to-content">Skip to Content</a>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar__brand">
+      <h1>Dicoding's Restaurant</h1>
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/like">Favorite</a></li>
+        <li><a href="http://github.com/abyanardiatama" target="_blank">About</a></li>
       </ul>
-      <label class="logo">Dicoding's Restaurant</label>
     </nav>
   </header>
-  <script>
-    const menuIcon = document.querySelector('.menu-icon');
-    const navbar = document.querySelector('ul');
-    menuIcon.addEventListener('click', () => {
-      // change navbar style left to 0 and -100%
-      navbar.classList.toggle('show-menu');
-    });
-  </script>
-  
-  
-  <!-- Main Content -->
-  <main id="maincontent">
-    <!-- Jumbotron -->
-    <div class="wrapper-jumbotron">
-      <div class="box1">
-          <!-- include image from unsplash -->
-          <img src="./images/heros/jumbo.png" alt="food" class="img-fluid">
-      </div>
-    </div>
-    <!-- End of Jumbotron -->
-
-    <!-- Content -->
-    <div class="content">
-      <h2>Selamat Datang di Dicoding's Restaurant</h2>
-      <p>Temukan restoran terbaik di kota Anda</p>
-    </div>
-
-    <!-- List of Restaurants -->
-    <div id="restaurant" class="wrapper">
-    </div>
-  </main>
-
-  <!-- footer -->
+  <main id="mainContent"></main>
   <footer>
-    <div class="footer">
-      <p>Copyright © 2020 - Dicoding's Restaurant</p> 
-    </div>
+    <p>All data obtained from <a href="https://restaurant-api.dicoding.dev" target="_blank" rel="noreferrer">Dicoding Restaurant API</a></p>
   </footer>
-  <script>
-    
-
-  </script>
 </body>
 </html>
