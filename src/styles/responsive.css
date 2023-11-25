@@ -105,11 +105,11 @@
     }
    
     .app-bar .app-bar__navigation {
-      background-image: linear-gradient(to bottom right, #D67D3E, #EE9322);
       position: static;
+      background-image: linear-gradient(to bottom right, #D67D3E, #EE9322);
       width: 100%;
     }
-   
+
     .app-bar .app-bar__navigation ul li {
       display: inline-block;
     }
@@ -121,7 +121,6 @@
       text-align: center;
       margin: 0;
     }
-
    
     .restaurants {
       grid-template-columns: 1fr 1fr;

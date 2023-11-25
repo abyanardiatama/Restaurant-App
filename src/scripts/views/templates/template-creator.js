@@ -2,7 +2,10 @@ import CONFIG from '../../globals/config';
 
 const createRestaurantDetailTemplate = (restaurant) => `
     <div class="restaurant__poster">
-        <img class="restaurant__poster__image lazyload" src="${CONFIG.BASE_IMAGE_URL}/${restaurant.pictureId}" alt="${restaurant.name}" />
+        <picture>
+          <source type="image/webp" srcset="${CONFIG.BASE_IMAGE_URL}/small/${restaurant.pictureId}" />
+          <img class="restaurant__poster__image lazyload" src="${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}" alt="${restaurant.name}" />
+        </picture>
     </div>
     <div tabindex="0" id="restaurant__info" class="restaurant__info">
         <div class="restaurant__info__details">
@@ -34,27 +37,30 @@ const createRestaurantDetailTemplate = (restaurant) => `
 const createRestaurantItemTemplate = (restaurant) => `
     <div class="restaurant-item">
     <div class="restaurant-item__header">
-      <img class="restaurant-item__header__poster" alt="${restaurant.name}"
-           src="${CONFIG.BASE_IMAGE_URL}/${restaurant.pictureId}">
+      <picture>
+        <source type="image/webp" srcset="${CONFIG.BASE_IMAGE_URL}/small/${restaurant.pictureId}">
+        <img class="restaurant-item__header__poster lazyload" alt="${restaurant.name}"
+        src="${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}">
+      </picture>
       <div class="restaurant-item__header__rating">
         <p>⭐️<span class="restaurant-item__header__rating__score">${restaurant.rating}</span></p>
       </div>
     </div>
     <div class="restaurant-item__content">
-      <h3><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h3>
+      <h3 class="restaurant__title"><a href="/#/detail/${restaurant.id}">${restaurant.name}</a></h3>
       <p>${restaurant.description}</p>
     </div>
   </div>
 `;
 
 const createLikeButtonTemplate = () => `
-  <button aria-label="like this movie" id="likeButton" class="like">
+  <button aria-label="like this restaurant" id="likeButton" class="like">
      <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
-const createLikedButtonTemplate = () => `
-  <button aria-label="unlike this movie" id="likeButton" class="like">
+const createUnlikeButtonTemplate = () => `
+  <button aria-label="unlike this restaurant" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;
@@ -63,5 +69,5 @@ export {
   createRestaurantItemTemplate,
   createRestaurantDetailTemplate,
   createLikeButtonTemplate,
-  createLikedButtonTemplate,
+  createUnlikeButtonTemplate,
 };

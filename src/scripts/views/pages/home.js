@@ -7,7 +7,10 @@ const Home = {
         <!-- Jumbotron -->
         <div class="wrapper-jumbotron">
             <div class="box1">
-                <img src="./jumbo.png" alt="food" class="img-fluid">
+                <picture>
+                  <source media="(max-width: 600px)" srcset="./jumbo(small).jpg">
+                  <img src="./jumbo.png" alt="food" class="img-fluid lazyload">
+                </picture>
             </div>
         </div>
         <!-- End of Jumbotron -->
