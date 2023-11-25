@@ -10,5 +10,50 @@
         "sourceType": "module"
     },
     "rules": {
+        "import/no-extraneous-dependencies": 0,
+        "no-console": 0,
+        "no-underscore-dangle": 0,
+        "no-restricted-globals": 0,
+        "linebreak-style": 0,
+        "no-unused-vars": 0,
+        "no-return-assign": 0,
+        "camelcase": 0,
+        "import/no-unresolved": 0,
+        "import/no-import-module-exports": 0,
+        "import/prefer-default-export": 0,
+        "no-shadow": 0,
+        "max-len": [
+            "error",
+            {
+                "code": 120,
+                "ignoreComments": true,
+                "ignoreTrailingComments": true,
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "class-methods-use-this": 0,
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "no-continue": 0,
+        "no-use-before-define": 0,
+        "no-prototype-builtins": 0,
+        "new-cap": 0,
+        "no-new": 0,
+        "no-undef": 0,
+        "no-await-in-loop": 0,
+        "prefer-destructuring": 0
     }
 }
