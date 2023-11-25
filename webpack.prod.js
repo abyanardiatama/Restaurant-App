@@ -23,7 +23,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new BundleAnalyzerPlugin({
-      analyzerMode: 'server',
+      analyzerMode: 'static',
       analyzerPort: 9001,
     }),
   ],
