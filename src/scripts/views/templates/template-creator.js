@@ -4,7 +4,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
     <div class="restaurant__poster">
         <picture>
           <source type="image/webp" srcset="${CONFIG.BASE_IMAGE_URL}/small/${restaurant.pictureId}" />
-          <img class="restaurant__poster__image lazyload" src="${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}" alt="${restaurant.name}" />
+          <img loading="lazy" class="restaurant__poster__image lazyload" src="${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}" alt="${restaurant.name}" />
         </picture>
     </div>
     <div tabindex="0" id="restaurant__info" class="restaurant__info">
@@ -39,7 +39,7 @@ const createRestaurantItemTemplate = (restaurant) => `
     <div class="restaurant-item__header">
       <picture>
         <source type="image/webp" srcset="${CONFIG.BASE_IMAGE_URL}/small/${restaurant.pictureId}">
-        <img class="restaurant-item__header__poster lazyload" alt="${restaurant.name}"
+        <img loading="lazy" class="restaurant-item__header__poster lazyload" alt="${restaurant.name}"
         src="${CONFIG.BASE_IMAGE_URL}/medium/${restaurant.pictureId}">
       </picture>
       <div class="restaurant-item__header__rating">

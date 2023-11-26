@@ -5,7 +5,7 @@ class FavoriteRestaurantView {
   getTemplate() {
     return `
         <div tabindex="0" class="content">
-          <input id="query" type="text">
+          <input id="query" type="text" placeholder="Cari Favorit Film">
           <h2 class="content__heading" style="font-weight: bold; margin-top: 32px;">Favorite Restaurant</h2>
           <div tabindex="0" id="restaurants" class="restaurants">
           </div>

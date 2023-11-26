@@ -8,8 +8,8 @@ const Home = {
         <div class="wrapper-jumbotron">
             <div class="box1">
                 <picture>
-                  <source media="(max-width: 600px)" srcset="./jumbo(small).jpg">
-                  <img src="./jumbo.png" alt="food" class="img-fluid lazyload">
+                  <source media="(max-width: 600px)" srcset="../images/herosHasil/hero-image_2large.jpg" style="height: 500px">
+                  <img loading="lazy" src="./images/herosHasil/hero-image_2xtralarge.jpg" style="height: 400px" alt="food" class="img-fluid lazyload">
                 </picture>
             </div>
         </div>
