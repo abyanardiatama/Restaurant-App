@@ -25,6 +25,9 @@
       object-position: center;
   
     }
+  #query{
+    width: 60%;
+  }
 }
 @media screen and (min-width: 400px) {
   /* .app-bar {
@@ -57,10 +60,9 @@
     text-align: center;
     margin: 0;
   } */
- #query{
-  /* width fill page */
-  
- }
+  #query{
+    width: 80%;
+  }
   .restaurants {
     grid-template-columns: 1fr;
   }
@@ -89,8 +91,10 @@
       height: 200px;
       object-fit: cover;
       object-position: center;
-  
     }
+  #query{
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 760px) {
@@ -161,6 +165,9 @@
       width: 100%;
       object-fit: cover;
       object-position: center;
+  }
+  #query{
+    width: 70%;
   }
 
 }
