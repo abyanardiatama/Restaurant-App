@@ -30,36 +30,6 @@
   }
 }
 @media screen and (min-width: 400px) {
-  /* .app-bar {
-    grid-template-columns: 1fr auto;
-    padding: 8px 16px;
-  }
- 
-  .app-bar .app-bar__brand h1 {
-    font-size: 1.25em;
-  }
- 
-  .app-bar .app-bar__menu {
-    display: none;
-  }
- 
-  .app-bar .app-bar__navigation {
-    background-image: linear-gradient(to bottom right, #D67D3E, #EE9322);
-    position: static;
-    width: 100%;
-  }
- 
-  .app-bar .app-bar__navigation ul li {
-    display: inline-block;
-  }
- 
-  .app-bar .app-bar__navigation ul li a {
-    color: #fff;
-    display: inline-block;
-    width: 120px;
-    text-align: center;
-    margin: 0;
-  } */
   #query{
     width: 80%;
   }

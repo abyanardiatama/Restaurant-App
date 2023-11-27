@@ -26,15 +26,6 @@ const Home = {
     const restaurants = await DicodingRestaurantSource.home();
     const restaurantsContainer = document.querySelector('#restaurants');
 
-    // const skipToContentButton = document.querySelector('#skip-to-content');
-    // skipToContentButton.href = '#content';
-    // const contentElement = document.querySelector('#content');
-    // skipToContentButton.addEventListener('click', (event) => {
-    //   event.preventDefault();
-    //   console.log('skip to content button clicked');
-    //   contentElement.focus();
-    // });
-
     restaurants.forEach((restaurant) => {
       restaurantsContainer.innerHTML += createRestaurantItemTemplate(restaurant);
     });

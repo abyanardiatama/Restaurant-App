@@ -38,30 +38,12 @@ class FavoriteRestaurantView {
         '',
       );
     } else {
-      // html = '<div class="restaurant-item__not__found restaurant__not__found">Restaurant tidak ditemukan</div>';
       html = this._getEmptyRestaurantTemplate();
     }
     document.querySelector('.restaurants').innerHTML = html;
-
-    // document
-    //   .getElementById('restaurant-search-container')
-    //   .dispatchEvent(new Event('restaurants:searched:updated'));
-
     document.getElementById('restaurants').dispatchEvent(new Event('restaurants:updated'));
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  // getFavoriteRestaurantTemplate() {
-  //   return `
-  //       <div tabindex="0" class="content">
-  //         <h2 class="content__heading" style="font-weight: bold; margin-top: 32px;">Favorite Restaurant</h2>
-  //         <div tabindex="0" id="restaurants" class="restaurants">
-  //         </div>
-  //       </div>
-  //     `;
-  // }
-
-  // eslint-disable-next-line class-methods-use-this
   showFavoriteRestaurants(restaurants) {
     let html;
     if (restaurants.length > 0) {
